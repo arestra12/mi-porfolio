@@ -6,11 +6,11 @@ html{
   font-family: "Fira Code",sans-serif;
   font-size: 16px;
   color: var(--text);
+  background-color: var(--bg);
 }
 
 
 
-@media (prefers-color-scheme: dark) {
   :root {
     /* BACKGROUND */
     --bg: #121212;
@@ -21,10 +21,6 @@ html{
     /* TEXT */
     --text: #e5e5e5;
     --text-secondary: #a3a3a3;
-
-
-
-
 
 
 
@@ -131,7 +127,7 @@ html{
 
     --shadow-sm: 0 1px 2px 0 rgba(77, 197, 30, 0.05);
   }
-}
+
 
 
 
