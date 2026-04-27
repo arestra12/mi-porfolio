@@ -49,7 +49,7 @@ export const HeroSection = () => {
 
           <div className='btn-content'>
             <button className="btn-cv" onClick={handleDownload}>
-              Descargarss CV
+              Descargar CV
             </button>
 
           </div>
