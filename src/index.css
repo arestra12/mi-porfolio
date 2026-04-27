@@ -1,0 +1,226 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto+Slab:wght@100..900&display=swap');
+
+html{
+
+  font-family: "Fira Code",sans-serif;
+  font-size: 16px;
+  color: var(--text);
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* BACKGROUND */
+    --bg: #121212;
+    --bg-header:linear-gradient(135deg, #060d1d, #01051a);
+    --bg-hero:linear-gradient(135deg, #0f172a, #020617);
+
+
+    /* TEXT */
+    --text: #e5e5e5;
+    --text-secondary: #a3a3a3;
+
+
+
+
+
+
+
+
+
+    
+    /* SURFACES */
+    --card-bg: #1e1e1e;
+    --card-border: #333;
+    --card-hover: #f9fafb;
+    --card-list: #2e2d2d;
+    --card-opacity:rgba(0, 0, 0, 0.637);
+
+    /* PRIMARY */
+    --primary: #16a34a;
+    --primary-hover: #16a34a;
+    --primary-select: #098837;
+    --primary-soft: #052e16;
+
+    /* BORDER */
+    --border: #554c33;
+    --border-strong: #2e323a;
+
+    /*BTN SUCCESS*/
+    /* Estado normal: más oscuro que antes */
+    --btn-success-start: #0e4624;
+    /* verde oscuro medio */
+    --btn-success-end: #0b311b;
+    /* verde oscuro intenso */
+    --btn-success-text: #ffffff;
+    --btn-success-shadow: rgba(0, 0, 0, 0.2);
+    /* sombra más marcada */
+
+    /* Hover: aún más oscuro */
+    --btn-success-hover-start: #024119;
+    /* verde aún más profundo */
+    --btn-success-hover-end: #04411a;
+    /* verde oscuro casi negro */
+    --btn-success-shadow-hover: rgba(0, 0, 0, 0.35);
+    /* sombra más intensa */
+
+    /*BTN FILTER*/
+    /* Estado normal */
+    --btn-filter-start: #2e0f61;
+    /* morado profundo */
+    --btn-filter-end: #461791;
+    /* morado intenso */
+    --btn-filter-text: #ffffff;
+    /* blanco para contraste */
+    --btn-filter-shadow: rgba(0, 0, 0, 0.5);
+    /* sombra oscura y marcada */
+
+    /* Hover */
+    --btn-filter-hover-start: #3e1486;
+    /* morado brillante */
+    --btn-filter-hover-end: #470486;
+    /* morado intenso */
+    --btn-filter-shadow-hover: rgba(0, 0, 0, 0.7);
+    /* sombra más intensa */
+
+
+
+    /* BTN WARNING (más naranja) */
+    /* Estado normal */
+    --btn-warning-start: #80290c;
+    /* naranja oscuro */
+    --btn-warning-end: #6b240c;
+    /* naranja quemado */
+    --btn-warning-text: #ffffff;
+    --btn-warning-shadow: rgba(0, 0, 0, 0.25);
+
+
+    /* Hover */
+    --btn-warning-hover-start: #853408;
+    /* naranja más vivo */
+    --btn-warning-hover-end: #882a05;
+    /* naranja fuerte profundo */
+    --btn-warning-shadow-hover: rgba(0, 0, 0, 0.4);
+
+    /* BTN BACK (info) */
+    --btn-back-start: #0a1c4d;
+    /* azul oscuro */
+    --btn-back-end: #122c83;
+    /* azul profundo */
+    --btn-back-text: #ffffff;
+    --btn-back-shadow: rgba(0, 0, 0, 0.25);
+
+    /* Hover */
+    --btn-back-hover-start: #0d2f64;
+    /* azul vivo */
+    --btn-back-hover-end: #062975;
+    --btn-back-shadow-hover: rgba(0, 0, 0, 0.4);
+
+
+    --gradiente-start: #0c0c0c;
+    --gradiente-end: #0c0c0c;
+
+    --bg-tag: rgba(99, 102, 241, 0.2);
+    --text-tag: #a5b4fc;
+    --pinned:#971616;
+    --shadow-input:rgba(145, 175, 76, 0.2);
+
+
+
+    --shadow-sm: 0 1px 2px 0 rgba(77, 197, 30, 0.05);
+  }
+}
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+a{
+ text-decoration: none;
+ color: inherit;
+
+}
+
+h1 {
+  font-size: 30px; /* 3rem */
+}
+
+h2 {
+  font-size: 24px; /* 1.5rem */
+}
+
+p {
+  font-size: 16px; /* 1rem */
+  line-height: 1.6;
+}
+
+header{
+  font-weight: 600;
+}
+
+
+
+.app-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+background: var(--bg-hero);
+  position: relative; /*Para que particles no le afecte*/
+  z-index: 1;
+}
+
+main{
+ flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.content-container{
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+}
+
+header, main, footer {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+/* =========================
+   SCROLL GLOBAL (CHROME / EDGE / SAFARI)
+========================= */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121212; /* fondo del scroll */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2e2e2e;
+  border-radius: 999px;
+  border: 2px solid #121212;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+/* =========================
+   FIREFOX
+========================= */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2e2e2e #121212;
+}

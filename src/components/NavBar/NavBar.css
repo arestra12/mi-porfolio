@@ -1,0 +1,47 @@
+.nav-navigation{
+    display: flex;
+    flex-direction: row;
+  
+    align-items: center;
+
+    max-width: 1110px;
+    
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+    
+
+}
+
+.nav-logo {
+  white-space: nowrap;
+}
+
+.nav-links{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    gap: 40px;
+    
+}
+
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.nav-link:hover {
+  color: #00e5ff;
+  text-shadow: 0 0 8px #00e5ff;
+}
+
+
+@media(max-width:800px){
+.nav-links{
+    display: none
+    
+}
+
+}

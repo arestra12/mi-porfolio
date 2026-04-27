@@ -1,0 +1,40 @@
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  margin: auto;
+}
+
+.formulario h2 {
+  text-align: center;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.formulario textarea {
+ height: 150px;
+}
+
+
+.formulario button {
+ background: rgba(18, 199, 223, 0.25); /* color transparente */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 40px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.formulario button:hover {
+  opacity: 0.9;
+}

@@ -1,0 +1,194 @@
+.hero {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+
+  width: 100%;
+
+
+}
+
+.content-hero {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  height: 100vh;
+  padding: 10px;
+
+
+
+  align-items: center;
+}
+
+
+/* 👇 cada uno ocupa la mitad */
+.hero-text,
+.hero-image {
+  flex: 1;
+}
+
+
+
+
+
+.name {
+  font-weight: 700;
+
+}
+
+.subtitle {
+  font-weight: 600;
+  opacity: 0.8;
+  color: #00bcd4;
+}
+
+.highlight {
+  font-weight: 600;
+  opacity: 0.8;
+  color: #00bcd4;
+  /* tu color principal */
+}
+
+
+
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  /* 🔥 clave */
+
+}
+
+
+
+
+/*Boton CV*/
+.btn-content {
+  padding: 5px;
+  display: flex;
+
+  height: 0px;
+
+}
+
+.btn-cv {
+  min-height: 44px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  /* mejor que 400 para botones */
+  cursor: pointer;
+  border: none;
+  border-radius: 999px;
+
+}
+
+
+
+
+
+
+
+
+/*imagen*/
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-wrapper {
+  padding: 10px;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+
+
+.hero-img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+
+  box-shadow:
+    0 0 40px rgba(0, 100, 255, 0.25),
+    0 0 80px rgba(0, 100, 255, 0.15);
+
+  transition: transform 0.3s ease;
+}
+
+.hero-img:hover {
+  transform: scale(1.05);
+}
+
+
+@media(max-width:860px) {
+  .hero-img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media(max-width:768px) {
+
+  /* 🔥 SECCIÓN */
+  .hero {
+    height: auto;
+    /* ❌ quita 100vh */
+    padding: 60px 20px;
+  }
+
+  .content-hero {
+    flex-direction: column;
+    height: auto;
+    /* 🔥 clave */
+    text-align: center;
+    /* centra texto */
+    gap: 30px;
+  }
+
+  /* 🔥 TEXTO */
+  .hero-text {
+    align-items: center;
+    padding: 0;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  /* 🔥 IMAGEN */
+  .hero-img {
+    width: 190px;
+    height: 190px;
+  }
+
+  /* 🔥 BOTÓN */
+  .btn-content {
+    height: auto;
+    /* ❌ quita ese 0px */
+    justify-content: center;
+  }
+
+  .btn-cv {
+    width: 100%;
+    /* opcional estilo mobile */
+    max-width: 250px;
+  }
+
+
+}

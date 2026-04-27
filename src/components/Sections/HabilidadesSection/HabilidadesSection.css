@@ -1,0 +1,96 @@
+.section1 {
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.content-section1 {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.title {
+  text-align: center;
+
+  margin-bottom: 40px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.skills-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+/* BLOQUES FRONTEND / BACKEND */
+.skill-box h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  color: #9ca3af;
+}
+
+/* GRID DE ICONOS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* CARD */
+.card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 25px 15px;
+  height: 120px; /* 🔥 fuerza altura uniforme */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.card img {
+  width: 45px;
+  height: 45px;
+  margin-bottom: 10px;
+}
+
+/* TEXTO */
+.card p {
+  font-size: 0.9rem;
+  color: #d1d5db;
+}
+
+
+
+/* HOVER EFFECTS */
+.card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* RESPONSIVE */
+
+
+/* TABLET */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 768px) {
+
+
+  .skills-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
