@@ -16,6 +16,7 @@
   border-radius: 8px;
   border: 1px solid #ccc;
   outline: none;
+  background-color: #dad0d0 !important;
 }
 
 .formulario textarea {
