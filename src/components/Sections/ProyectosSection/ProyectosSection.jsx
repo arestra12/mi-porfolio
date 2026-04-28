@@ -39,14 +39,14 @@ export const ProyectosSection = () => {
             <div className="project-image">
 
               <img
-                src="/images/react1.png"
+                src="/images/react1.webp"
                 alt="Proyecto React 1"
                 onClick={() =>
                   openModal(
                     [
-                      "/images/react1.png",
-                      "/images/react2.png",
-                      "/images/react3.png",
+                      "/images/react1.webp",
+                      "/images/react2.webp",
+                      "/images/react3.webp",
                     ],
                     0
                   )
@@ -54,14 +54,14 @@ export const ProyectosSection = () => {
               />
 
               <img
-                src="/images/react2.png"
+                src="/images/react2.webp"
                 alt="Proyecto React 2"
                 onClick={() =>
                   openModal(
                     [
-                      "/images/react1.png",
-                      "/images/react2.png",
-                      "/images/react3.png",
+                      "/images/react1.webp",
+                      "/images/react2.webp",
+                      "/images/react3.webp",
                     ],
                     1
                   )
@@ -69,14 +69,14 @@ export const ProyectosSection = () => {
               />
 
               <img
-                src="/images/react3.png"
+                src="/images/react3.webp"
                 alt="Proyecto React 3"
                 onClick={() =>
                   openModal(
                     [
-                      "/images/react1.png",
-                      "/images/react2.png",
-                      "/images/react3.png",
+                      "/images/react1.webp",
+                      "/images/react2.webp",
+                      "/images/react3.webp",
                     ],
                     2
                   )
@@ -120,14 +120,14 @@ export const ProyectosSection = () => {
             <div className="project-image">
 
               <img
-                src="/images/python1.png"
+                src="/images/python1.webp"
                 alt="Proyecto Python 1"
                 onClick={() =>
                   openModal(
                     [
-                      "/images/python1.png",
-                      "/images/python2.png",
-                      "/images/python3.png",
+                      "/images/python1.webp",
+                      "/images/python2.webp",
+                      "/images/python3.webp",
                     ],
                     0
                   )
@@ -135,14 +135,14 @@ export const ProyectosSection = () => {
               />
 
               <img
-                src="/images/python2.png"
+                src="/images/python2.webp"
                 alt="Proyecto Python 2"
                 onClick={() =>
                   openModal(
                     [
-                      "/images/python1.png",
-                      "/images/python2.png",
-                      "/images/python3.png",
+                      "/images/python1.webp",
+                      "/images/python2.webp",
+                      "/images/python3.webp",
                     ],
                     1
                   )
@@ -150,14 +150,14 @@ export const ProyectosSection = () => {
               />
 
               <img
-                src="/images/python3.png"
+                src="/images/python3.webp"
                 alt="Proyecto Python 3"
                 onClick={() =>
                   openModal(
                     [
-                      "/images/python1.png",
-                      "/images/python2.png",
-                      "/images/python3.png",
+                      "/images/python1.webp",
+                      "/images/python2.webp",
+                      "/images/python3.webp",
                     ],
                     2
                   )
