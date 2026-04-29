@@ -14,9 +14,6 @@ export const ContactoSection = () => {
         <h2>Contacto</h2>
       </div>
 
-
-      <div className='section-main'>
-
       
       <div className='content-section4'>
 
@@ -46,7 +43,7 @@ export const ContactoSection = () => {
             <div className='info-text'>
 
               <h4>Email:</h4>
-              <h4>alvarezclarosjosegabriel568@gmail.com</h4>
+              <h4 className='email'>alvarezclarosjosegabriel568@gmail.com</h4>
             </div>
 
           </div>
@@ -84,7 +81,7 @@ export const ContactoSection = () => {
       </div>
 
 
-      </div>
+
     </section>
   )
 }

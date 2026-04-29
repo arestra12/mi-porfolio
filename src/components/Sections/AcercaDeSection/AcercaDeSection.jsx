@@ -5,7 +5,7 @@ export const AcercaDeSection = () => {
   return (
     <section id="acerca" className='section3'>
       <div className='content-section3'>
-        <h2 className='title'>Acerca de mi</h2>
+        <h2 className='title '>Acerca de mi</h2>
 
         <div className='about-container'>
           {/* Bloque Profesional: Párrafo largo */}
